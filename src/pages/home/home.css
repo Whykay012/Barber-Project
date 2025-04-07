@@ -91,11 +91,11 @@
 
 @media screen and (max-width: 1260px) {
   .container h2 {
-    font-size: 3.7rem;
-    line-height: 4rem;
+    font-size: 3rem;
+    line-height: 3.5rem;
   }
   .container {
-    margin-top: 1rem;
+    padding-bottom: 0rem;
   }
 
   .home-header {
@@ -103,7 +103,8 @@
   }
 
   .heros-img {
-    height: 80vh;
+    height: 58vh;
+    width: 100%;
   }
   .heros-img img {
     height: 100%;
@@ -112,13 +113,18 @@
 }
 @media screen and (max-width: 960px) {
   .container h2 {
-    font-size: 3rem;
-    line-height: 3.5rem;
+    font-size: 2.5rem;
+    line-height: 3.3rem;
+  }
+  .container p {
+    font-size: 1rem;
   }
   .container {
     margin-top: 1rem;
+    padding: 3rem;
   }
   .container img {
+    margin-top: 0.3rem;
     width: 3rem;
   }
 
@@ -126,8 +132,8 @@
     height: fit-content;
   }
 
-  .heros-img img {
-    width: 40rem;
+  .heros-img {
+    height: 60vh;
   }
 }
 
@@ -136,7 +142,7 @@
     display: none;
   }
   .home-header {
-    height: 52vh;
+    height: 70vh;
     margin: 1rem;
   }
 }
@@ -150,10 +156,16 @@
   .container {
     max-width: 90%;
     align-items: center;
+    padding: 4rem 4rem 2rem;
   }
 
   .container h2 {
-    font-size: 3rem;
+    font-size: 3.5rem;
+    line-height: 5rem;
+  }
+
+  .container p {
+    font-size: 1.5rem;
   }
   .heros-img img {
     margin: auto;
