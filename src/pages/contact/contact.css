@@ -1,0 +1,311 @@
+/* General Styles */
+.Element {
+  width: 100vw;
+}
+/* Hero Section */
+.hero-details {
+  background-color: black;
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  background: black;
+}
+.hero-img {
+  position: relative;
+  width: 65%;
+  height: 350px; /* Adjust height as needed */
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+}
+
+.hero-img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 4;
+}
+.hero-details h1 {
+  font-size: 3rem;
+  color: #fff;
+  margin-left: 10rem;
+  width: 30%;
+}
+
+.hero-details h1 {
+  font-size: 3rem;
+  color: #fff;
+  margin: 0 auto;
+}
+
+.hero-details img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+/* Live Location Map */
+.map {
+  text-align: center;
+  margin: 1.5rem auto;
+  padding: 2rem;
+  max-width: 90vw;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.map h1 {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: rem;
+}
+/* Contact Form Section */
+.contact-form {
+  width: 90vw;
+  display: flex;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+.contact-form-container {
+  width: 70%;
+  padding: 10px 0;
+  border-radius: 10px;
+  /* background: #fff; */
+}
+.successful {
+  color: rgb(0, 121, 0);
+  font-size: 1.5rem;
+  text-align: center;
+}
+.contact-form-container h1 {
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Name and Email side by side */
+.inputs {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+input {
+  outline: none;
+}
+.name-email {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+/* Comment Section - Biggest */
+textarea.form-control {
+  height: 250px;
+  outline: none;
+  width: 100%;
+}
+/* Subject should fill the row */
+select.form-control {
+  outline: none;
+  width: 100%;
+}
+
+/* Submit Button */
+.tracking {
+  width: 100%;
+  padding: 12px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+}
+
+.form-btn {
+  background-color: white;
+  border: 1px solid red;
+  width: 10%;
+  color: RED;
+  transition: 0.3s ease-in-out;
+  margin-top: 2rem;
+  padding: 12px;
+  border-radius: 0;
+}
+.form-btn:hover {
+  background: rgb(209, 0, 0);
+  color: white;
+}
+.tracking:hover {
+  background: rgb(209, 0, 0);
+}
+.icon {
+  width: 28%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 35px 0 0;
+}
+.icon-display {
+  margin: 5.7rem 4rem;
+  justify-content: left;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.icons {
+  opacity: 0.4;
+}
+.text h4 {
+  font-size: 0.9rem;
+}
+.text p {
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.name-email :nth-child(1) {
+  width: 98%;
+}
+.name-email :nth-child(2) {
+  width: 98%;
+  margin-left: 2%;
+}
+/* Breakpoint: Laptops - 1260px */
+@media (max-width: 1260px) {
+  .icon-display {
+    margin: 4rem 2rem;
+  }
+
+  .form-btn {
+    width: 20%;
+  }
+}
+
+/* Breakpoint: Tablets - 960px */
+@media (max-width: 960px) {
+  .contact-form {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .contact-form-container {
+    width: 100%;
+  }
+
+  .icon {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .icon-display {
+    margin: 3rem 1rem;
+    flex-direction: column;
+    text-align: center;
+  }
+  .form-btn {
+    width: 30%;
+  }
+
+  .hero-details h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Breakpoint: Medium Tablets - 768px */
+@media (max-width: 768px) {
+  .hero-details {
+    flex-direction: column;
+    height: auto;
+    align-items: flex-start;
+  }
+  .hero-img img {
+    width: 90%;
+    margin: auto;
+  }
+
+  .hero-img {
+    width: 90%;
+  }
+  .hero-details h1 {
+    margin: 10% 0 2%;
+    text-decoration: underline;
+    font-size: 2rem;
+  }
+
+  .name-email {
+    flex-direction: column;
+  }
+
+  .name-email :nth-child(1),
+  .name-email :nth-child(2) {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .icon-display {
+    margin: 3rem 1rem;
+    flex-direction: column;
+    text-align: center;
+    /* margin: 0 auto; */
+  }
+
+  .form-btn {
+    width: 40%;
+  }
+}
+
+/* Breakpoint: Phones - 540px */
+@media (max-width: 540px) {
+  .map {
+    padding: 1rem;
+  }
+
+  .contact-form {
+    padding: 1rem;
+  }
+
+  .form-btn {
+    width: 100%;
+  }
+
+  .hero-details h1 {
+    font-size: 1.7rem;
+    margin-top: 4rem;
+    width: 90%;
+  }
+
+  .tracking {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .inputs {
+    padding: 10px;
+  }
+}

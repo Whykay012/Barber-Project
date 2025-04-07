@@ -1,0 +1,197 @@
+.login-form-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 100vw;
+  height: 50rem;
+}
+
+.login-role1 {
+  width: 60%;
+  background: url("../../assets/images/afro-american-woman-model-studio.jpg")
+    no-repeat center/cover;
+  position: relative;
+  z-index: 0;
+  padding: 4rem;
+  height: 100%;
+  /* text-align: left; */
+}
+
+.login-role1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+.login-role1 .line {
+  margin-top: 1.5rem;
+  border: 3px solid red;
+  width: 5rem;
+}
+
+.login-role1 h1 {
+  font-size: 3.5rem;
+  z-index: 2;
+  /* padding: 4rem; */
+  color: #fff;
+  margin-top: 6rem;
+}
+
+.login-role1 a {
+  color: #fff;
+  text-decoration: underline;
+  margin-left: 2rem;
+}
+.login-role1 a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+.login-role1 p {
+  z-index: 2;
+  font-size: 1.3rem;
+  color: #fff;
+  line-height: 3rem;
+}
+.login-role1 a {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+
+.login-role2 {
+  width: 40%;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-role2 > form {
+  width: 80%;
+}
+.login-role2 h1 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 0.6rem;
+  transition: all 0.3s ease-in-out;
+}
+.login-role2 h1:hover {
+  color: red;
+  text-decoration: underline;
+}
+.login-role2 .form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.login-role2 .form-group > label {
+  font-size: 0.8rem;
+  margin: 0.5rem 0;
+}
+.login-role2 .form-group > input {
+  width: 100%;
+  font-size: 0.7rem;
+  margin-bottom: 0.5rem 0 0;
+  padding: 0.5rem;
+}
+
+.login-role2 button {
+  width: 100%;
+  padding: 0.7rem;
+  background: #fff;
+  border: 1px solid red;
+  color: red;
+  font-weight: 500;
+  margin-top: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.login-role2 button:hover {
+  color: #fff;
+  background: red;
+}
+/* =============== MEDIA QUERIES =============== */
+
+@media screen and (max-width: 1260px) {
+  .login-role1 h1 {
+    font-size: 3rem;
+  }
+  .login-role1 p {
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+  }
+
+  .login-role1 a {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .login-role1,
+  .login-role2 {
+    width: 100%;
+    padding: 2rem;
+  }
+  .login-role2 > form {
+    width: 90%;
+  }
+  .login-role1 h1 {
+    font-size: 2rem;
+  }
+
+  .login-role2 p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .login-form-container {
+    flex-direction: column;
+    height: auto;
+  }
+  .login-role1 h1 {
+    font-size: 2rem;
+  }
+  .login-role2 > form {
+    width: 80%;
+  }
+  .login-role1 p {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+  .login-role1 a {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .login-role1 h1 {
+    font-size: 1.6rem;
+    margin: 2rem auto;
+  }
+  .login-role1 > p {
+    display: none;
+  }
+
+  .login-role1 h1 {
+    font-size: 2.5rem;
+    margin-top: 4rem;
+
+    /* margin: 4rem auto 1rem; */
+  }
+
+  .login-role1,
+  .login-role2 {
+    padding: 1.5rem;
+    height: 50vh;
+  }
+}

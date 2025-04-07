@@ -1,0 +1,65 @@
+/* Blog dropdown container */
+.blog-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Blog NavLink */
+.blog-item {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.blog-item a:hover {
+  color: red;
+  font-weight: 800;
+}
+
+/* Dropdown Menu */
+.blog-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: black;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+  width: 12rem;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+
+/* Dropdown items */
+.blog-item {
+  background-color: black;
+  padding: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.blog-item:hover {
+  background-color: #fff;
+}
+
+/* Blog item links */
+.blog-items-link {
+  color: white;
+  display: block;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .blog-item a {
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  .blog-item a:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  .blog-item a:hover {
+    background-color: #fff;
+    color: #000;
+  }
+}

@@ -1,0 +1,139 @@
+.footer {
+  /* margin: 0 auto; */
+  display: grid;
+  width: 100vw;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  align-items: start;
+  background-color: black;
+}
+
+.contact,
+.footer-middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 6rem;
+}
+
+.contact-icon {
+  color: red;
+  font-size: 1.5rem;
+}
+
+h3 {
+  color: white;
+  font-size: 0.9rem;
+}
+
+.contact :nth-child(3),
+.contact :nth-child(4) {
+  color: rgb(146, 120, 120);
+  font-size: 0.8rem;
+}
+
+.footer-middle p {
+  color: rgb(146, 120, 120);
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.social-media-icon {
+  display: flex;
+  margin: 2rem 0;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+.footer-middle img {
+  width: 8rem;
+  margin-bottom: 1rem;
+}
+
+.social-link {
+  padding: 0.5rem;
+  border-radius: 50%;
+  width: 2.3rem;
+  height: 2.3rem;
+  background-color: rgb(80, 78, 78);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-media-icon a {
+  color: #fff;
+  font-size: 1.3rem;
+}
+.copyright {
+  grid-column: span 3;
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
+  padding: 10px 0;
+  background-color: #222;
+  color: rgb(80, 78, 78);
+  font-size: 14px;
+}
+
+.copyright a {
+  color: red;
+  margin-left: 5px;
+}
+
+.copyright a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.heart {
+  color: red;
+  margin: 0 5px;
+}
+
+/* @960px and below */
+@media screen and (max-width: 960px) {
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .copyright {
+    grid-column: span 2;
+  }
+}
+
+/* @768px and below */
+@media screen and (max-width: 768px) {
+  .footer {
+    grid-template-columns: 1fr;
+    place-items: center;
+    text-align: center;
+  }
+
+  .copyright {
+    grid-column: span 1;
+  }
+
+  .social-media-icon {
+    gap: 2rem;
+  }
+}
+
+/* @540px and below */
+@media screen and (max-width: 540px) {
+  .footer-middle img {
+    width: 6rem;
+  }
+
+  .social-media-icon {
+    /* flex-direction: column; */
+    /* gap: 1rem; */
+  }
+
+  .contact,
+  .footer-middle {
+    margin-top: 3rem;
+  }
+}

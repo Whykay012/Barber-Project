@@ -1,0 +1,80 @@
+/* -------------- BASE STYLES ---------------- */
+
+.gallery-img {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.gallery-img .line {
+  margin: 0 auto 1rem;
+  border: 3px solid red;
+  width: 80px;
+}
+
+.gallery-img h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.img-display {
+  margin: 2rem 0;
+}
+
+.gal-instra {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: 80%;
+  margin: 0 auto 4rem;
+}
+
+.gal-instra-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.gal-instra-item img:hover {
+  transform: scale(1.02);
+}
+
+/* ---------------- MEDIA QUERIES ---------------- */
+
+/* @1260px */
+
+/* @960px */
+@media screen and (max-width: 960px) {
+  .gal-instra {
+    grid-template-columns: repeat(2, 1fr);
+    width: 85%;
+  }
+}
+
+/* @768px */
+@media screen and (max-width: 768px) {
+  .gallery-img h2 {
+    font-size: 2rem;
+  }
+
+  .gal-instra {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* @540px */
+@media screen and (max-width: 540px) {
+  .gallery-img h2 {
+    font-size: 1.5rem;
+  }
+
+  .gallery-img .line {
+    width: 50px;
+  }
+
+  .gal-instra {
+    grid-template-columns: 1fr;
+    width: 85%;
+  }
+}
