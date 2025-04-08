@@ -20,7 +20,7 @@
   height: 350px; /* Adjust height as needed */
   background-position: center;
   background-size: cover;
-  height: 50vh;
+  height: 30rem;
 }
 
 .hero-img::after {
@@ -238,6 +238,9 @@ select.form-control {
   .hero-details h1 {
     font-size: 2.5rem;
   }
+  .hero-img {
+    height: 25rem;
+  }
 }
 
 /* Breakpoint: Medium Tablets - 768px */
@@ -248,19 +251,21 @@ select.form-control {
     align-items: flex-start;
   }
   .hero-img img {
-    width: 90%;
+    width: 95%;
     margin: auto;
   }
 
   .hero-img {
-    width: 90%;
+    width: 95%;
   }
   .hero-details h1 {
     margin: 10% 0 2%;
     text-decoration: underline;
     font-size: 2rem;
   }
-
+  .tracking {
+    padding: 8px;
+  }
   .name-email {
     flex-direction: column;
   }

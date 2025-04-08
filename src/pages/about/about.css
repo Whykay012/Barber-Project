@@ -19,7 +19,7 @@
 
 .containerss img {
   width: 65%;
-  height: 55vh;
+  height: 30rem;
   object-fit: cover;
 }
 @media screen and (max-width: 1260px) {
