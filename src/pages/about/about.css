@@ -53,6 +53,12 @@
   }
 }
 
+@media screen and (max-width: 660px) {
+  .containerss img {
+    height: 20rem;
+  }
+}
+
 /* @540px and below */
 @media screen and (max-width: 540px) {
   .containerss h1 {
