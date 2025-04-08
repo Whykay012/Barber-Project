@@ -94,10 +94,6 @@
     font-size: 3.7rem;
     line-height: 4rem;
   }
-
-  .container img {
-    width: 3rem;
-  }
   .container {
     margin-top: 1rem;
   }
@@ -114,13 +110,6 @@
     object-fit: cover;
   }
 }
-
-@media screen and (max-width: 1010px) {
-  .container h2 {
-    font-size: 3.3rem;
-  }
-}
-
 @media screen and (max-width: 960px) {
   .container h2 {
     font-size: 3rem;
@@ -129,13 +118,16 @@
   .container {
     margin-top: 1rem;
   }
+  .container img {
+    width: 3rem;
+  }
 
   .home-header {
     height: fit-content;
   }
 
   .heros-img img {
-    width: 100%;
+    width: 40rem;
   }
 }
 
@@ -165,7 +157,6 @@
   }
   .heros-img img {
     margin: auto;
-    width: 100%;
   }
   .heros-img {
     max-width: 90%;

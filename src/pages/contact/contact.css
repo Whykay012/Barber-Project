@@ -72,6 +72,9 @@
   color: #333;
   margin-bottom: rem;
 }
+.leaflet-container {
+  z-index: 1 !important; /* lower than navbar */
+}
 /* Contact Form Section */
 .contact-form {
   width: 90vw;

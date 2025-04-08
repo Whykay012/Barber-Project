@@ -4,7 +4,7 @@
   justify-content: space-between;
   margin: 0 auto;
   width: 100vw;
-  height: 100vh;
+  height: 50rem;
 }
 .register-role1 {
   width: 60%;
@@ -188,10 +188,9 @@
 
   .register-role1 {
     padding: 1rem;
-    height: 45vh;
+    height: 100%;
   }
   .register-role2 {
-    /* height: 50vh; */
     margin: 1rem 0;
   }
 
