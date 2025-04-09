@@ -13,6 +13,7 @@ const Navbar = () => {
       <div className="nav-logo">
         <img src={logo} alt="NAROSUNDAR LOGO" />
       </div>
+
       <div className={`nav-section ${menuOpen ? "active" : ""}`}>
         <div className="nav-links">
           <NavLink to="/" onClick={() => setMenuOpen(false)}>
@@ -27,9 +28,10 @@ const Navbar = () => {
           <NavLink to="/gallery" onClick={() => setMenuOpen(false)}>
             Gallery
           </NavLink>
-          <NavLink to="/blog" onClick={() => setMenuOpen(false)}>
-            <BlogDisplay />
-          </NavLink>
+
+          {/* Inline Blog Accordion */}
+          <BlogDisplay />
+
           <NavLink to="/contact" onClick={() => setMenuOpen(false)}>
             Contact
           </NavLink>
@@ -40,10 +42,12 @@ const Navbar = () => {
             Login
           </NavLink>
         </div>
+
         <button className="quote-btn" onClick={() => setMenuOpen(false)}>
           FREE QUOTE
         </button>
       </div>
+
       <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
         {menuOpen ? <FaTimes /> : <FaBars />}
       </div>

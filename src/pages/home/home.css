@@ -222,6 +222,47 @@
   .container p {
     font-size: 1rem;
   }
+  .nav-logo img {
+    width: 10rem;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .container img {
+    width: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .container h2 {
+    font-size: 2rem;
+  }
+  .btn-header {
+    padding: 0.5rem;
+    width: 7rem;
+  }
+  .container {
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+  }
+  .container p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 254px) {
+  .container h2 {
+    font-size: 1.8rem;
+  }
+
+  .container {
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+  }
+  .container p {
+    font-size: 0.8rem;
+  }
+  .nav-logo img {
+    width: 9rem;
+  }
 }
 
 /* ----- ABOUT SECTION ----- */
