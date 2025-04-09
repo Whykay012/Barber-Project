@@ -10,9 +10,9 @@ const Navbar = () => {
 
   return (
     <nav className="nav-bar">
-      <div className="nav-logo">
+      <NavLink to="/" onClick={() => setMenuOpen(false)}>
         <img src={logo} alt="NAROSUNDAR LOGO" />
-      </div>
+      </NavLink>
 
       <div className={`nav-section ${menuOpen ? "active" : ""}`}>
         <div className="nav-links">
