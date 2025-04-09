@@ -79,6 +79,12 @@
   }
 }
 
+@media screen and (max-width: 864px) {
+  .logo-link img {
+    width: 10rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .menu-icon {
     display: block;

@@ -47,7 +47,7 @@ const BlogDisplay = () => {
   };
 
   return (
-    <>
+    <div className="blog-pos">
       {/* Blog trigger */}
       <div
         className="blog-container"
@@ -90,7 +90,7 @@ const BlogDisplay = () => {
           ))}
         </ul>
       )}
-    </>
+    </div>
   );
 };
 

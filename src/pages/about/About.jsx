@@ -9,12 +9,12 @@ import "./about.css";
 const About = () => {
   return (
     <div>
-      <header className="home-headerss">
+      <div className="home-headerss">
         <div className="containerss">
           <h1>About Us </h1>
           <img src={hero1} alt="About Image" />
         </div>
-      </header>
+      </div>
       <AboutSection />
       <AccordionSecton />
       <ServiceSection />

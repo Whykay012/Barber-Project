@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <nav className="nav-bar">
-      <NavLink to="/" onClick={() => setMenuOpen(false)}>
+      <NavLink className="logo-link" to="/" onClick={() => setMenuOpen(false)}>
         <img src={logo} alt="NAROSUNDAR LOGO" />
       </NavLink>
 
