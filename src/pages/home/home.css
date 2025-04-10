@@ -165,7 +165,7 @@
   }
   .heros-img img {
     margin: auto;
-    width: 100%;
+    width: 95%;
   }
   .heros-img {
     max-width: 90%;
@@ -922,7 +922,7 @@ hr {
   padding: 50px 0;
   background: #fff;
   position: relative;
-  width: 100%;
+  width: 100vw;
 }
 .service-sectionImg {
   width: 100%;
@@ -1130,6 +1130,43 @@ hr {
   }
   .service-display {
     width: 90%;
+  }
+}
+@media (max-width: 320px) {
+  .service-sectionImg {
+    height: 23rem;
+  }
+  .service-sectionImg img {
+    height: 100%;
+  }
+  .xtra img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-bottom: 0;
+  }
+  .xtra h3 {
+    font-size: 1rem;
+  }
+  .service-display {
+    width: 95%;
+  }
+  .xtra {
+    padding: 0.5rem;
+  }
+  .xtra p {
+    font-size: 0.7rem;
+  }
+  .service-display:nth-child(2) {
+    top: 13%;
+    left: 4%;
+  }
+  .service-display:nth-child(3) {
+    top: 38%;
+    left: 4%;
+  }
+  .service-display:nth-child(4) {
+    top: 63%;
+    left: 4%;
   }
 }
 

@@ -110,6 +110,7 @@ h3 {
     grid-template-columns: 1fr;
     place-items: center;
     text-align: center;
+    width: 100vw;
   }
 
   .copyright {

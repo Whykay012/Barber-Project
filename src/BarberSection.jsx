@@ -7,7 +7,7 @@ import barber6 from "./assets/images/barber6.jpg.webp";
 
 const BarberSection = () => {
   return (
-    <main className="main">
+    <main className="mainn">
       <div className="barber-section">
         <div className="barber-img">
           <img src={barber1} alt="BARBER1" />
